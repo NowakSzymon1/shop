@@ -56,7 +56,7 @@ Navigation search
 shop card
 ------------------------------ */
 .notification {
-  background-color: #555;
+  background-color: #353b48;
   color: white;
   text-decoration: none;
   padding: 15px 26px;
@@ -125,26 +125,27 @@ body, html {
 }
 
 
-
+/*--------------
+social media at img
+ */
 
 #mySidenav a {
   margin-top: 50px;
-  position: absolute; /* Position them relative to the browser window */
-  right: -155px; /* Position them outside of the screen */
-  transition: 0.3s; /* Add transition on hover */
-  padding: 20px; /* 15px padding */
-  width: 200px; /* Set a specific width */
-  text-decoration: none; /* Remove underline */
-  font-size: 20px; /* Increase font size */
-  color: white; /* White text color */
-  border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+  position: absolute;
+  right: -155px;
+  transition: 0.3s;
+  padding: 20px;
+  width: 200px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px 0px 0px 5px;
 }
 
 #mySidenav a:hover {
-  right: 0; /* On mouse-over, make the elements appear as they should */
+  right: 0;
 }
 
-/* The about link: 20px from the top with a green background */
 #instagram {
   top: 20px;
   background-color: #4CAF50;
@@ -152,15 +153,79 @@ body, html {
 
 #facebook {
   top: 80px;
-  background-color: #2196F3; /* Blue */
+  background-color: #2196F3;
 }
 
 #twitter {
   top: 140px;
-  background-color: #f44336; /* Red */
+  background-color: #f44336;
 }
 
 #write_to_us {
   top: 200px;
-  background-color: #555 /* Light Black */
+  background-color: #555
+}
+
+/*-----------------
+Hidden menu
+ */
+
+.sideMenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #353b48;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideMenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideMenu a:hover {
+  color: #f1f1f1;
+}
+
+.sideMenu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.sideMenu{
+    background-color: #818181;
+}
+.sideMenu a{
+    color: white;
+}
+.sideMenu a:hover{
+    background-color: #353b48;
+}
+
+#dropDownItems{
+    background-color: #353b48;
+
+}
+.dropdown-item{
+    background-color: #353b48;
+}
+.dropdown-menu a:hover{
+    background-color: #818181;
 }

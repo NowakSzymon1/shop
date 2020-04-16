@@ -1,0 +1,57 @@
+.product-picture{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    float: left;
+    left: 10%
+}
+
+.product-image{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* border: solid red; */
+    opacity: 1;
+}
+
+.product-image:hover{
+    opacity:0.75;
+    transition:0.5s;
+}
+
+.picture-buy-button{
+    position: absolute;
+    transition: .5s ease;
+    opacity:0;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    border: none;
+    border-radius: 12px;
+    color: black;
+    background-color: forestgreen;
+    text-align: center;
+    cursor: pointer;
+}
+.add-to-koszyk{
+    position: absolute;
+    transition: .5s ease;
+    opacity:0;
+    top:10%;
+    right:10px;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+}
+
+.product-picture:hover .picture-buy-button{
+    opacity: 1;
+}
+.product-picture:hover .add-to-koszyk{
+    opacity: 1;
+}
+
+.product-picture:hover img{
+    opacity:0.75;
+    transition:0.5s;
+}

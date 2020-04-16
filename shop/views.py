@@ -7,11 +7,11 @@ from shop.models import Products
 def shop(request):
     return render(request, 'index.html')
 
-def xd(request):
-    return render(request, 'xd.html')
-
 def test(request):
-    return render(request, 'test.html')
+    return render(request, 'baseHead.html')
+
+def about(request):
+    return render(request, 'about.html')
 
 def create_products(request):
     choise_title = request.POST['title']
@@ -29,7 +29,7 @@ def create_products(request):
 
     ordering = Products.objects.all().order_by("date_added")
 
-    return render(request, 'xd.html', {
+    return render(request, 'baseHead.html', {
         'order': ordering
     })
 
